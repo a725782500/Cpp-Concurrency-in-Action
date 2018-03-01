@@ -1,13 +1,13 @@
 #include <iostream>
-#include <thread>
+#include <thread> //1
 
-void hello()
+void hello()  //2
 {
     std::cout<<"Hello Concurrent World\n";
 }
 
 int main()
 {
-    std::thread t(hello);
-    t.join();
+    std::thread t(hello); //3
+    t.join(); //4
 }
